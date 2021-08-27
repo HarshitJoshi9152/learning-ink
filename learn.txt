@@ -1,0 +1,23 @@
+ok so this is just INK
+not OCLIF
+not PASTEL
+
+
+ok relearn the imports/exports lmao
+	do imports & exports work differently in react-babel front end setup
+	than they do in nodejs ?
+	what is esm, common js etc.
+	package.json
+		".jsx"
+		filetype: modules 
+
+
+
+INK
+
+components
+
+	Text: all text must be inside `Text` components
+
+	Box: It's like <div style="display: flex"> in the browser.
+		margin: https://github.com/vadimdemedes/ink#margin:  specified in no of lines
