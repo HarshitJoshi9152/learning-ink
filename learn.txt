@@ -13,6 +13,7 @@ ok relearn the imports/exports lmao
 		filetype: modules 
 learn about the new features in js | eg: `??`
 do the mosh SQL course
+https://chancejs.com/
 
 
 # React

@@ -7,6 +7,7 @@ const importJsx = require("import-jsx");
 const { Text, useInput, Box } = require("ink");
 const { Spinner } = importJsx("./spinner");
 const { Counter } = importJsx("./counter");
+const { Table } = importJsx("./table");
 
 const App = ({ name = "Stranger", age = 18 }) => {
 	useEffect(() => {
@@ -30,8 +31,11 @@ const App = ({ name = "Stranger", age = 18 }) => {
 			</Box>
 			<Spinner interval={2000}></Spinner>
 			<Counter start={10}></Counter>
+			<Table></Table>
 		</>
 	);
 };
 
 module.exports = App;
+
+// https://www.twilio.com/blog/building-conference-cli-in-react
