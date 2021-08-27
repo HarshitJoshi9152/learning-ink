@@ -1,5 +1,13 @@
+/**
+ * hmmm good way to learn about Higher Level Components
+ * make a base animation component which will be provided with
+ * 	default interval & animation frames
+ * and then extend it to make a component which also records the time passed since the animation started
+ */
+
 const React = require("react");
 const { useEffect, useState } = require("react");
+const propTypes = require("prop-types");
 
 // components
 const { Text } = require("ink");
@@ -23,6 +31,15 @@ const Spinner = ({ interval = 1000 }) => {
 	return <Text>animation : {currentFrame}</Text>;
 };
 
+Spinner.propTypes = {
+	interval: propTypes.number.isRequired,
+};
+
+// isRequired
+// 	if prop not provided, the following is the output
+// Warning: Failed prop type: The prop `interval` is marked as required in `Spinner`, but its value is `undefined`.
+//
+// NO VIOLATION FOR EXTRA PROPS !
 module.exports = {
 	Spinner,
 };

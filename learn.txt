@@ -6,11 +6,32 @@ not PASTEL
 ok relearn the imports/exports lmao
 	do imports & exports work differently in react-babel front end setup
 	than they do in nodejs ?
+		cant use export const name;
 	what is esm, common js etc.
 	package.json
 		".jsx"
 		filetype: modules 
+learn about the new features in js | eg: `??`
+do the mosh SQL course
 
+
+# React
+
+talks like
+getting closure on react hooks
+reactTraining hooks abstraction
+kent c dodds state management
+and UI vs Logic components separation
+https://www.youtube.com/watch?v=yhF7OmuIILc
+https://www.youtube.com/watch?v=lG6Z0FQj_SI
+https://www.youtube.com/watch?v=seU46c6Jz7E
+rethinking reactivity
+https://www.youtube.com/watch?v=AdNJ3fydeao
+fun with hooks
+https://www.youtube.com/watch?v=1jWS7cCuUXw
+
+
+learn propTypes
 
 
 INK
@@ -21,3 +42,32 @@ components
 
 	Box: It's like <div style="display: flex"> in the browser.
 		margin: https://github.com/vadimdemedes/ink#margin:  specified in no of lines
+		border: https://github.com/vadimdemedes/ink/blob/master/examples/borders/borders.js
+
+	WTF IS THIS
+	const {render, useInput, useApp, Box, Text} = require('../..');
+
+
+hooks
+
+	useInput((input, key) => {
+		console.log(input);
+		"k"
+		console.log(key);
+		{
+			upArrow: false,
+			downArrow: false,
+			leftArrow: false,
+			rightArrow: false,
+			pageDown: false,
+			pageUp: false,
+			return: false,
+			escape: false,
+			ctrl: false,
+			shift: false,
+			tab: false,
+			backspace: false,
+			delete: false,
+			meta: false
+		}
+	})

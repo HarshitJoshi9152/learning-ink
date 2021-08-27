@@ -6,6 +6,7 @@ const importJsx = require("import-jsx");
 // components
 const { Text, useInput, Box } = require("ink");
 const { Spinner } = importJsx("./spinner");
+const { Counter } = importJsx("./counter");
 
 const App = ({ name = "Stranger", age = 18 }) => {
 	useEffect(() => {
@@ -22,10 +23,13 @@ const App = ({ name = "Stranger", age = 18 }) => {
 					</Text>
 				</Box>
 				<Box borderStyle="round">
-					<Text>you are {age} years old</Text>
+					<Text>
+						you are {age} years old <Spinner interval={1000}></Spinner>
+					</Text>
 				</Box>
 			</Box>
 			<Spinner interval={2000}></Spinner>
+			<Counter start={10}></Counter>
 		</>
 	);
 };
